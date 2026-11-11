@@ -2,23 +2,27 @@
 
 ## Logic
 
-$\lnot \lnot A \equiv A~~$ _(Double Negation)_ \
-$A \land A \equiv A~~$ _(Idempotence)_ \
-$A \lor  A \equiv A$ \
-$A \land B \equiv B \land A~~$ _(Commutativity)_ \
-$A \lor  B \equiv B \lor  A$ \
-$(A \land B) \land C \equiv A \land (B \land C)~~$ _(Associativity)_ \
-$(A \lor  B) \lor  C \equiv A \lor  (B \lor  C)$ \
-$A \land (A \lor  B) \equiv A~~$ _(Absorption)_ \
-$A \lor  (A \land B) \equiv A$ \
-$A \land (B \lor  C) \equiv (A \land B) \lor  (A \land C)~~$ _(First distributive law)_ \
-$A \lor  (B \land C) \equiv (A \lor  B) \land (A \lor  C)~~$ _(Second distributive law)_ \
-$\lnot (A \land B) \equiv \lnot A \lor  \lnot B~~$ _(De-Morgan's law)_ \
-$\lnot (A \lor  B) \equiv \lnot A \land \lnot B$
+<div class="katex-flaign">
+
+$$
+\begin{align*}
+    \lnot \lnot A &\equiv A &\textit{(Double Negation)} \\
+    A \land A &\equiv A &\textit{(Idempotence)} \\
+    A \lor  A &\equiv A\\
+    A \land B &\equiv B \land A &\textit{(Commutativity)} \\
+    A \lor  B &\equiv B \lor  A\\
+    (A \land B) \land C &\equiv A \land (B \land C) &\textit{(Associativity)}\\
+    (A \lor  B) \lor  C &\equiv A \lor  (B \lor  C)\\
+    A \land (A \lor  B) &\equiv A &\textit{(Absorption)}\\
+    A \lor  (A \land B) &\equiv A\\
+    A \land (B \lor  C) &\equiv (A \land B) \lor  (A \land C) &\textit{(First distributive law)}\\
+    A \lor  (B \land C) &\equiv (A \lor  B) \land (A \lor  C) &\textit{(Second distributive law)}\\
+    \lnot (A \land B) &\equiv \lnot A \lor  \lnot B &\textit{(De-Morgan's law)}\\
+    \lnot (A \lor  B) &\equiv \lnot A \land \lnot B \\
+\end{align*}
+$$
 
 **Quantifier Logic Rules**:
-
-<div style="text-align: left;">
 
 $$
 \begin{align*}
@@ -31,7 +35,6 @@ $$
 {\color{orange} \forall x: (\exists y: P(x, y))} &\not\models {\color{green} \exists y: (\forall x: P(x, y))}
 \end{align*}
 $$ 
-</div>
 
 |     | Input | Output | Meaning |
 | :-: | :---: | :----: | :-----: |
@@ -148,3 +151,5 @@ Given set $S$ with operation $*$ we denote this Algebra as $\braket{S;*}$, and t
 | **Monoid** | $\color{green}{\text{Required}}$ | $\color{green}{\text{Required}}$ | | |
 | **Group** | $\color{green}{\text{Required}}$ | $\color{green}{\text{Required}}$ | $\color{green}{\text{Required}}$ | |
 | **Abelian Group** | $\color{green}{\text{Required}}$ | $\color{green}{\text{Required}}$ | $\color{green}{\text{Required}}$ | $\color{green}{\text{Required}}$ |
+
+</div>
