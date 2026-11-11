@@ -21,8 +21,11 @@ $$
     \lnot (A \lor  B) &\equiv \lnot A \land \lnot B \\
 \end{align*}
 $$
+</div>
 
 **Quantifier Logic Rules**:
+
+<div class="katex-flaign">
 
 $$
 \begin{align*}
@@ -34,7 +37,8 @@ $$
 {\color{green} \exists y: (\forall x: P(x, y))} &\models {\color{orange} \forall x: (\exists y: P(x, y))} \\
 {\color{orange} \forall x: (\exists y: P(x, y))} &\not\models {\color{green} \exists y: (\forall x: P(x, y))}
 \end{align*}
-$$ 
+$$
+</div>
 
 |     | Input | Output | Meaning |
 | :-: | :---: | :----: | :-----: |
@@ -51,6 +55,8 @@ $$
 
 ### $\mathcal{S}\text{ets}$
 
+<div class="katex-flaign">
+
 $$
 \begin{align*}
     A \cap A &= A &\textit{(Idempotence)} \\
@@ -66,6 +72,7 @@ $$
    A \subseteq B \iff A \cap B &= A \iff A \cup B = B &\textit{(Consistency)}\\
 \end{align*}
 $$
+</div>
 
 **Powerset**: $\mathcal{P}(A) \dot{\iff} \{S | S \subseteq A\}$.
 For a finite set with cardinality $k$, the power set has cardinality $2^k$ (hence the name "power set").
@@ -93,6 +100,8 @@ $\rho \circ \sigma \dot{\iff} \{(a, c)~|~\exists b: (a, b) \in \rho \land (b, c)
 - Symmetry and Antisymmetry are **NOT mutually exclusive** (both possible at once)
 
 ## $\N\text{umber Theory}$
+
+<div class="katex-flaign">
 
 $$
 \begin{align*}
@@ -128,6 +137,7 @@ $$
     &a^{p - 1} \equiv_m 1 \textbf{~~where~~} p \text{~prime} \land a \text{~not divisible by~} p \\
 \end{align*}
 $$
+</div>
 
 ## Algebras
 
@@ -151,5 +161,3 @@ Given set $S$ with operation $*$ we denote this Algebra as $\braket{S;*}$, and t
 | **Monoid** | $\color{green}{\text{Required}}$ | $\color{green}{\text{Required}}$ | | |
 | **Group** | $\color{green}{\text{Required}}$ | $\color{green}{\text{Required}}$ | $\color{green}{\text{Required}}$ | |
 | **Abelian Group** | $\color{green}{\text{Required}}$ | $\color{green}{\text{Required}}$ | $\color{green}{\text{Required}}$ | $\color{green}{\text{Required}}$ |
-
-</div>
