@@ -2,7 +2,7 @@
 
 ## Logic
 
-<div class="katex-flaign">
+<div class="katex-flalign">
 
 $$
 \begin{align*}
@@ -25,7 +25,7 @@ $$
 
 **Quantifier Logic Rules**:
 
-<div class="katex-flaign">
+<div class="katex-flalign">
 
 $$
 \begin{align*}
@@ -55,7 +55,7 @@ $$
 
 ### $\mathcal{S}\text{ets}$
 
-<div class="katex-flaign">
+<div class="katex-flalign">
 
 $$
 \begin{align*}
@@ -101,7 +101,7 @@ $\rho \circ \sigma \dot{\iff} \{(a, c)~|~\exists b: (a, b) \in \rho \land (b, c)
 
 ## $\N\text{umber Theory}$
 
-<div class="katex-flaign">
+<div class="katex-flalign">
 
 $$
 \begin{align*}
