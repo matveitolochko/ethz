@@ -1,3 +1,12 @@
+<style>
+.katex-flalign .katex-display {
+    text-align: left !important;
+}
+.katex-flalign .katex-display>.katex {
+    text-align: left !important;
+}
+</style>
+
 # DiskMat CheatSheet
 
 ## Logic
@@ -89,7 +98,7 @@ $~~\hat{\rho} \dot{\iff} \{(b, a)~|~(a, b) \in \rho\} \iff a~\rho~b \equiv b~\ha
 $\rho \circ \sigma \dot{\iff} \{(a, c)~|~\exists b: (a, b) \in \rho \land (b, c) \in \sigma\}$
 
 | Property Name | Propositional | Set |
-| :-: | :-: | :-: |
+| :- | :- | :- |
 | Reflexitivity | $\forall a: (a~\rho~a)$ | $\text{id}_A \subseteq \rho$ |
 | Irreflexitivity | $\forall a: \lnot(a~\rho~a)$ | $\rho \cap \text{id}_A = \varnothing$ |
 | Symmetry | $a~\rho~b \leftrightarrow b~\rho~a$ | $\rho = \hat{\rho}$ |
@@ -141,14 +150,14 @@ $$
 
 ## Algebras
 
-Given set $S$ with operation $*$ we denote this Algebra as $\braket{S;*}$, and the operations of $*$ as:
+Given set $S$ with operation $\ast$ we denote this Algebra as $\braket{S;*}$, and the operations of $\ast$ as:
 
-- **Totality:** $\forall a,b \in S: a*b \in S$ (not technically required, but assumed)
-- **Associativity:** $a*(b*c) = (a*b)*c$
-- **Identity:** $\exists e \in S: \forall a \in S : e * a = a * e = a$
-- **Divisibility:** $\forall a,b \in S: \exists d : a * d = b$
+- **Totality:** $\forall a,b \in S: a\ast b \in S$ (not technically required, but assumed)
+- **Associativity:** $a\ast(b\ast c) = (a\ast b)\ast c$
+- **Identity:** $\exists e \in S: \forall a \in S : e \ast a = a \ast e = a$
+- **Divisibility:** $\forall a,b \in S: \exists d : a \ast d = b$
     - **Invertibility**: Special case where $b = e$ and $d = \hat{a}$
-- **Commutativity:** $a*b = b*a$
+- **Commutativity:** $a\ast b = b\ast a$
 
 | | Associativity | Identity | Divisibility | Commutativity |
 | :- | :-: | :-: | :-: | :-: |
