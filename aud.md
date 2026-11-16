@@ -42,5 +42,5 @@ $$ -->
 | Finde alle Nachbarn von $v$ | $\mathcal{O}(n)$ | $\mathcal{O}(\deg(v))$ |
 | Finde $\deg(v)$ | $\mathcal{O}(n)$ | $\mathcal{O}(\deg(v))$ <br><span style="color:teal">Oder $\mathcal{O}(1)$ mit Erweiterungen</span> |
 | Lösche Kante $e$ | $\mathcal{O}(1)$ | $\mathcal{O}(\deg(v_i))$ <br><span style="color:teal">Oder $\mathcal{O}(1)$ falls Zeiger auf $e$ gegeben</span> |
-| Füge Kante $e$ ein | $\mathcal{O}(1)$ | $\mathcal{O}(\deg(v_i))$ <br><span style="color:red">Müssen prüfen ob $e$ schon existiert!</span><span style="color:teal"> Falls bekannt dass $e$ neu ist: $\mathcal{O}(1)$</span> |
+| Füge Kante $e$ ein | $\mathcal{O}(1)$ | $\mathcal{O}(\deg(v_i))$ <br><span style="color:red">Müssen prüfen ob $e$ schon existiert!</span><br><span style="color:teal">Falls bekannt dass $e$ neu ist: $\mathcal{O}(1)$</span> |
 | Lösche / Füge Knoten $v$ ein <br><span style="color:red">(mitsamt inzidenten Kanten)</span> | $\mathcal{O}(n^2)$ | $\mathcal{O}(n)$ <br><span style="color:teal">Kann verbessert werden</span> |
