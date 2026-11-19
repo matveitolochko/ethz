@@ -125,10 +125,10 @@ $\implies (A; \preccurlyeq)$ is called a **Poset** \
 $\quad\implies$ If all elements in Poset comparable $\iff$ **Totally Ordered Set**
 
 **Functions:** $f: A \to B$ from **domain** $A$ to **codomain** $B$ **maps** $f: a \in A \mapsto b \in B$ \
-$\quad1. \forall a \in A: \exists b \in B: a \rel{f} b~~$ _(Totality)_ \
-$\quad2. \forall a \in A: \forall b, b' \in B: (a \rel{f} b \land a \rel{f} b' \to b = b')~~$ _(well-defined)_ \
+$\quad1. \forall a \in A: \exists b \in B: a \rel{f} b\space\space$ _(Totality)_ \
+$\quad2. \forall a \in A: \forall b, b' \in B: (a \rel{f} b \land a \rel{f} b' \to b = b')\space\space$ _(well-defined)_ \
 $\implies$ **injective:** $\forall a \neq a':f(a) \neq f(a')$ \
-$\implies$ **surjektive:** $\forall b \in B \exists a \in A: b=f(a)$ where $f(A) = B$ \
+$\implies$ **surjektive:** $\forall b \in B: \exists a \in A: b=f(a)$ where $f(A) = B$ \
 $\implies$ **bijektive:** injektiv + surjektiv
 
 ## $\N\text{umber Theory}$
