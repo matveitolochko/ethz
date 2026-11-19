@@ -91,7 +91,7 @@ $$
 
 **Cartesian Product:** $A \times B \dot{\iff} \Set{(a, b) | a \in A \land b \in B}$ \
 $\implies |A \times B| = |A| \cdot |B|$ \
-$\implies \text{X}\sub{{i=1}}^k A\sub{i}=\Set{(a\sub{1}, ..., a\sub{k}) | a\sub{i} \in A\sub{i} ~\forall i \in [1,...,k]}$ \
+$\implies \text{X}\sub{{i=1}}^k A\sub{i}=\Set{(a\sub{1}, \dots, a\sub{k}) | a\sub{i} \in A\sub{i} ~\forall i \in [1, \dots, k]}$ \
 **Powerset:** $\mathcal{P}(A) \dot{\iff} \Set{S | S \subseteq A}$. \
 $\implies$ If $A$ finite with cardinality $k$, $\mathcal{P}(A)$  has cardinality $2^k$ \
 **Partition:** $\bigcup\sub{{i \in \mathcal{I}}} S\sub{i} = A$ where $S\sub{i} \cap S\sub{j} = \varnothing \space\forall i \neq j$
@@ -141,7 +141,7 @@ $y(x) = m(x)q(x) + r(x)$ where $\deg(r(x)) \lt \deg(m(x)) \iff R_{m(x)}(y(x)) = 
 $a = \displaystyle\prod_i p_i^{e_i}$ and $b = \displaystyle\prod_i p_i^{f_i}$
 
 **Polynomials:** \
-$a(x)=a_{d}x^{d}+a_{d-1}x^{d-1}+...+a_1x+a_0=\displaystyle\sum_{i=0}^d a_i x^i$ \
+$a(x)=a_{d}x^{d}+a_{d-1}x^{d-1}+\dots+a_1x+a_0=\displaystyle\sum_{i=0}^d a_i x^i$ \
 $\deg(a(x)) = $ greatest $i$ for which $a_i \neq 0$ \
 Special polynomial $0$ has $deg(0) = -\infin$
 
@@ -211,7 +211,7 @@ $\implies$ For groups: $\text{ord}(G) \dot{\iff} |G|$ \
 $\implies \forall m \in \Z: a^m = a^{R_{\text{ord}(a)}(m)}$ \
 $\implies \text{ord}(e) = 1$
 
-**Cyclic Groups:** $G = \braket{g}$ where _generator_: $\braket{g} \dot{\iff} \set{e, g, g^2, ..., g^{\text{ord}(g) - 1}}$ \
+**Cyclic Groups:** $G = \braket{g}$ where _generator_: $\braket{g} \dot{\iff} \set{e, g, g^2, \dots, g^{\text{ord}(g) - 1}}$ \
 $\implies \braket{g} = G \simeq \braket{\Z_{\text{ord}(G)}; \oplus} \implies$ **abelian**
 
 **Ring:** $\braket{R;+;-;0;\cdot~;1}$ where $(-)$ is negation, not subtraction. Satisfies: \
