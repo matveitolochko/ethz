@@ -25,13 +25,13 @@ $\to \xi$ [Äquivalenzrelation](./diskmat.md) (symmetrisch, reflexiv, transitiv)
 $\to$ **Zusammenhangskomponente (ZHK):** [Äquivalenzklassen](./diskmat.md) der $\xi$ relation. \
 $\to$ **Zusammenhängend (zhgd):** Genau eine ZHK $\equiv$ "Jeder Knoten erreicht jeden anderen"
 
-<!-- $$
+$$
 \begin{CD}
 \text{Weg} @>\text{Keine Wiederholten Knoten}>> \text{Pfad} @>>>\\
 @VV\text{$v_0 = v_l$}V \\
 \text{Geschlosener Weg} @>\text{Keine Wiederholten Kanten}>\text{und $l \ge 1$}> \text{Zyklus} @>\text{Keine Wiederholten Knoten}>\text{(Ausser $v_0 = v_l$) und $l \ge 1$}> \text{Kreis}
 \end{CD}
-$$ -->
+$$
 
 ### Laufzeiten typischer Graphoperationen
 
