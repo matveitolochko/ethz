@@ -7,6 +7,12 @@
 }
 </style>
 
+$$
+\global\def\sub#1{ _#1 }
+\global\def\space{ ~ }
+\global\def\rel#1{\space #1 \space}
+$$
+
 # DiskMat CheatSheet
 
 ## Logic
@@ -85,42 +91,42 @@ $$
 
 **Cartesian Product:** $A \times B \dot{\iff} \Set{(a, b) | a \in A \land b \in B}$ \
 $\implies |A \times B| = |A| \cdot |B|$ \
-$\implies \text{X}_{i=1}^kA_i=\Set{(a_1, ..., a_k) | a_i \in A_i ~\forall i \in [1,...,k]}$ \
+$\implies \text{X}\sub{{i=1}}^k A\sub{i}=\Set{(a\sub{1}, ..., a\sub{k}) | a\sub{i} \in A\sub{i} ~\forall i \in [1,...,k]}$ \
 **Powerset:** $\mathcal{P}(A) \dot{\iff} \Set{S | S \subseteq A}$. \
 $\implies$ If $A$ finite with cardinality $k$, $\mathcal{P}(A)$  has cardinality $2^k$ \
-**Partition:** $\bigcup_{i \in \mathcal{I}}S_i = A$ where $S_i \cap S_j = \varnothing ~\forall i \neq j$
+**Partition:** $\bigcup\sub{{i \in \mathcal{I}}} S\sub{i} = A$ where $S\sub{i} \cap S\sub{j} = \varnothing \space\forall i \neq j$
 
 #### Relations
 
 **Relation:**
-$\rho \subseteq A \times B \implies (a, b) \in \rho \equiv a ~\rho~ b$ \
+$\rho \subseteq A \times B \implies (a, b) \in \rho \equiv a \rel{\rho}  b$ \
 **Inverse:** $\hat{\rho}$, or somtimes $\rho^{-1}$: 
-$~~\hat{\rho} \dot{\iff} \Set{(b, a) | (a, b) \in \rho} \iff a~\rho~b \equiv b~\hat{\rho}~a$ \
+$\space\space\hat{\rho} \dot{\iff} \Set{(b, a) | (a, b) \in \rho} \iff a \rel{\rho} b \equiv b \rel{\hat{\rho}} a$ \
 **Composition:**
 $\rho \circ \sigma \dot{\iff} \Set{(a, c) | \exists b: (a, b) \in \rho \land (b, c) \in \sigma}$
 
 | Property Name | Propositional | Set |
 | :- | :- | :- |
-| Reflexitivity | $\forall a: (a~\rho~a)$ | $\text{id}_A \subseteq \rho$ |
-| Irreflexitivity | $\forall a: \lnot(a~\rho~a)$ | $\rho \cap \text{id}_A = \varnothing$ |
-| Symmetry | $a~\rho~b \leftrightarrow b~\rho~a$ | $\rho = \hat{\rho}$ |
-| Antisymmetry | $a~\rho~b \land b~\rho~a \to a = b$ | $\rho \cap \hat{\rho} = \text{id}_A$ |
-| Transitivity | $a~\rho~b \land b~\rho~c \leftrightarrow a~\rho~c$ | $\rho^2 \subseteq \rho$ |
+| Reflexitivity | $\forall a: (a \rel{\rho} a)$ | $\text{id}_A \subseteq \rho$ |
+| Irreflexitivity | $\forall a: \lnot(a \rel{\rho} a)$ | $\rho \cap \text{id}_A = \varnothing$ |
+| Symmetry | $a \rel{\rho} b \leftrightarrow b \rel{\rho} a$ | $\rho = \hat{\rho}$ |
+| Antisymmetry | $a \rel{\rho} b \land b \rel{\rho} a \to a = b$ | $\rho \cap \hat{\rho} = \text{id}_A$ |
+| Transitivity | $a \rel{\rho} b \land b \rel{\rho} c \leftrightarrow a \rel{\rho} c$ | $\rho^2 \subseteq \rho$ |
 
 $\implies$ Reflexivity and Irreflexitivity are **mutually exclusive** \
 $\implies$ Symmetry and Antisymmetry are **NOT mutually exclusive** (both possible at once) \
 **Transitive closure**: $\rho^\ast = \displaystyle\bigcup_{n \in \N_{1+}}{\rho^n}$ \
 **Equivalence Relation:** $\theta \in$ reflexive, transitive, symmetric \
-$\implies$ **Equivalence Class:** $[a]_\theta \dot{\iff} \Set{b \in A | b ~\theta~ a}$\
+$\implies$ **Equivalence Class:** $[a]_\theta \dot{\iff} \Set{b \in A | b \rel{\theta} a}$\
 $\implies$ **Quotient Set:** $A / \theta \dot{\iff} \Set{[a]_\theta | a \in A}$ (Partition of $A$) \
 **Order Relation:** $(\preccurlyeq) \in$ reflexive, transitive, **anti**-symmetric \
 $\implies a \prec b \dot{\iff} a \preccurlyeq b \land a \neq b$ \
 $\implies (A; \preccurlyeq)$ is called a **Poset** \
 $\quad\implies$ If all elements in Poset comparable $\iff$ **Totally Ordered Set**
 
-**Functions:** $~f: A \to B$ from **domain** $A$ to **codomain** $B$ **maps** $f: a \in A \mapsto b \in B$ \
-$\quad1. \forall a \in A: \exists b \in B: a ~f~ b~~$ _(Totality)_ \
-$\quad2. \forall a \in A: \forall b, b' \in B: (a~f~b \land a~f~b' \to b = b')~~$ _(well-defined)_ \
+**Functions:** $f: A \to B$ from **domain** $A$ to **codomain** $B$ **maps** $f: a \in A \mapsto b \in B$ \
+$\quad1. \forall a \in A: \exists b \in B: a \rel{f} b~~$ _(Totality)_ \
+$\quad2. \forall a \in A: \forall b, b' \in B: (a \rel{f} b \land a \rel{f} b' \to b = b')~~$ _(well-defined)_ \
 $\implies$ **injective:** $\forall a \neq a':f(a) \neq f(a')$ \
 $\implies$ **surjektive:** $\forall b \in B \exists a \in A: b=f(a)$ where $f(A) = B$ \
 $\implies$ **bijektive:** injektiv + surjektiv
