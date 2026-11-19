@@ -8,8 +8,8 @@
 </style>
 
 $$
-\global\def\sub#1{ _#1 }
-\global\def\space{ ~ }
+\global\def\sub#1{_{#1}}
+\global\def\space{~}
 \global\def\rel#1{\space #1 \space}
 $$
 
@@ -91,10 +91,10 @@ $$
 
 **Cartesian Product:** $A \times B \dot{\iff} \Set{(a, b) | a \in A \land b \in B}$ \
 $\implies |A \times B| = |A| \cdot |B|$ \
-$\implies \text{X}\sub{{i=1}}^k A\sub{i}=\Set{(a\sub{1}, \dots, a\sub{k}) | a\sub{i} \in A\sub{i} ~\forall i \in [1, \dots, k]}$ \
+$\implies \text{X}\sub{i=1}^k A\sub{i}=\Set{(a\sub{1}, \dots, a\sub{k}) | a\sub{i} \in A\sub{i} ~\forall i \in [1, \dots, k]}$ \
 **Powerset:** $\mathcal{P}(A) \dot{\iff} \Set{S | S \subseteq A}$. \
 $\implies$ If $A$ finite with cardinality $k$, $\mathcal{P}(A)$  has cardinality $2^k$ \
-**Partition:** $\bigcup\sub{{i \in \mathcal{I}}} S\sub{i} = A$ where $S\sub{i} \cap S\sub{j} = \varnothing \space\forall i \neq j$
+**Partition:** $\bigcup\sub{i \in \mathcal{I}} S\sub{i} = A$ where $S\sub{i} \cap S\sub{j} = \varnothing \space\forall i \neq j$
 
 #### Relations
 
