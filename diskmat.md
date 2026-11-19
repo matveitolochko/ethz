@@ -115,10 +115,10 @@ $\rho \circ \sigma \dot{\iff} \Set{(a, c) | \exists b: (a, b) \in \rho \land (b,
 
 $\implies$ Reflexivity and Irreflexitivity are **mutually exclusive** \
 $\implies$ Symmetry and Antisymmetry are **NOT mutually exclusive** (both possible at once) \
-**Transitive closure**: $\rho^\ast = \displaystyle\bigcup_{n \in \N_{1+}}{\rho^n}$ \
+**Transitive closure**: $\rho^\ast = \displaystyle\bigcup\sub{n \in \N\sub{1+}}{\rho^n}$ \
 **Equivalence Relation:** $\theta \in$ reflexive, transitive, symmetric \
-$\implies$ **Equivalence Class:** $[a]_\theta \dot{\iff} \Set{b \in A | b \rel{\theta} a}$\
-$\implies$ **Quotient Set:** $A / \theta \dot{\iff} \Set{[a]_\theta | a \in A}$ (Partition of $A$) \
+$\implies$ **Equivalence Class:** $[a]\sub{\theta} \dot{\iff} \Set{b \in A | b \rel{\theta} a}$\
+$\implies$ **Quotient Set:** $A / \theta \dot{\iff} \Set{[a]\sub{\theta} | a \in A}$ (Partition of $A$) \
 **Order Relation:** $(\preccurlyeq) \in$ reflexive, transitive, **anti**-symmetric \
 $\implies a \prec b \dot{\iff} a \preccurlyeq b \land a \neq b$ \
 $\implies (A; \preccurlyeq)$ is called a **Poset** \
@@ -134,47 +134,47 @@ $\implies$ **bijektive:** injektiv + surjektiv
 ## $\N\text{umber Theory}$
 
 **Euclid Arithmetic:** \
-$x = mq + r$ where $0 \le r \lt |m| \iff R_m(x) = r$ \
-$y(x) = m(x)q(x) + r(x)$ where $\deg(r(x)) \lt \deg(m(x)) \iff R_{m(x)}(y(x)) = r(x)$
+$x = mq + r$ where $0 \le r \lt |m| \iff R\sub{m}(x) = r$ \
+$y(x) = m(x)q(x) + r(x)$ where $\deg(r(x)) \lt \deg(m(x)) \iff R\sub{m(x)}(y(x)) = r(x)$
 
 **Prime Factorization:** \
-$a = \displaystyle\prod_i p_i^{e_i}$ and $b = \displaystyle\prod_i p_i^{f_i}$
+$a = \displaystyle\prod\sub{i} p\sub{i}^{e\sub{i}}$ and $b = \displaystyle\prod\sub{i} p\sub{i}^{f\sub{i}}$
 
 **Polynomials:** \
-$a(x)=a_{d}x^{d}+a_{d-1}x^{d-1}+\dots+a_1x+a_0=\displaystyle\sum_{i=0}^d a_i x^i$ \
-$\deg(a(x)) = $ greatest $i$ for which $a_i \neq 0$ \
+$a(x)=a\sub{d}x^{d}+a\sub{d-1}x^{d-1}+\dots+a\sub{1}x+a\sub{0}=\displaystyle\sum\sub{i=0}^d a\sub{i} x^i$ \
+$\deg(a(x)) = $ greatest $i$ for which $a\sub{i} \neq 0$ \
 Special polynomial $0$ has $deg(0) = -\infin$
 
 **Greatest Comon Divisor:** \
-$\displaystyle \gcd(a, b) = \prod_i p_i^{\min(e_i, f_i)}$ \
+$\displaystyle \gcd(a, b) = \prod\sub{i} p\sub{i}^{\min(e\sub{i}, f\sub{i})}$ \
 $\gcd(a, b) \implies \exists u,v: ua + vb$ \
 $\gcd(a, b) = 1 \implies a$ and $b$ called relatively prime \
-$\gcd(m, n) = \gcd(m, n - qm) = \gcd(m, R_m(n))$
+$\gcd(m, n) = \gcd(m, n - qm) = \gcd(m, R\sub{m}(n))$
 
 **Modular Arithmetic:** \
-$a \equiv_m b \dot{\iff} m \mid (a - b) \dot{\iff} R_m(a) = R_m(b)$ \
-$a = b \models a \equiv_m b \iff a \not\equiv_m b \models a \not= b$ \
-$a \equiv_m R_m(a)$ \
-$\gcd(a, m) = 1 \iff \exists x \in \Z_m : ax \equiv_m 1$
+$a \equiv\sub{m} b \dot{\iff} m \mid (a - b) \dot{\iff} R\sub{m}(a) = R\sub{m}(b)$ \
+$a = b \models a \equiv\sub{m} b \iff a \not\equiv\sub{m} b \models a \not= b$ \
+$a \equiv\sub{m} R\sub{m}(a)$ \
+$\gcd(a, m) = 1 \iff \exists x \in \Z\sub{m} : ax \equiv\sub{m} 1$
 
 **Groups:** \
-$\Z_m^\ast = \Set{a \in \Z_m | \gcd(a, m) = 1}$ \
+$\Z\sub{m}^\ast = \Set{a \in \Z\sub{m} | \gcd(a, m) = 1}$ \
 $\forall a \in G: a^{|G|} = e$ where $G$ finite Group \
 Lagrange:\
 $\to \forall H \subseteq G: \text{ord}(H) \mid \text{ord}(G)$ where $H$ subgroup of $G$ \
 $\to \forall a \in G: \text{ord}(a) \mid \text{ord}(G)$ \
 **$e$-th root of Group $G$:** $\exists e \in \Z: \gcd(e, |G|) = 1 \implies x \mapsto x^e$ bijektiv \
-$\implies e$-th root $y = x^e \implies \exists d: x = y^d \implies ed \equiv_{\text{ord}(G)} 1$
+$\implies e$-th root $y = x^e \implies \exists d: x = y^d \implies ed \equiv\sub{\text{ord}(G)} 1$
 
 **Euler function:** \
 $\varphi: \Z^+ \to \Z^+$ \
-$\varphi(m) = |Z_m^\ast|$ \
+$\varphi(m) = |Z\sub{m}^\ast|$ \
 $\varphi(p) = p - 1$ where $p$ prime \
-$\varphi(m) = \displaystyle\prod_{i=1}^r (p_i - 1)p_i^{e_i - 1}$ where $m = \displaystyle\prod_{i=1}^r p_i^{e_i}$
+$\varphi(m) = \displaystyle\prod\sub{i=1}^r (p\sub{i} - 1)p\sub{i}^{e\sub{i} - 1}$ where $m = \displaystyle\prod\sub{i=1}^r p\sub{i}^{e\sub{i}}$
 
 **Euler and Fermat:** \
-$a^{\varphi(m)} \equiv_m 1$ where $m \ge 2 \land \gcd(a, m) = 1$ \
-$a^{p - 1} \equiv_m 1$ where $p$ prime and $a$  is not divisible by $p$
+$a^{\varphi(m)} \equiv\sub{m} 1$ where $m \ge 2 \land \gcd(a, m) = 1$ \
+$a^{p - 1} \equiv\sub{m} 1$ where $p$ prime and $a$  is not divisible by $p$
 
 ## Algebras
 
@@ -208,11 +208,11 @@ $\implies \varPsi~$ bijektiv $\implies G \simeq H$ (**Isomorphism**)
 
 **Order:** Given element $a \in$ Group $G: \text{ord}(a) = \min\set{m \ge1 | a^m = e}$ else $\text{ord} = \infin$ \
 $\implies$ For groups: $\text{ord}(G) \dot{\iff} |G|$ \
-$\implies \forall m \in \Z: a^m = a^{R_{\text{ord}(a)}(m)}$ \
+$\implies \forall m \in \Z: a^m = a^{R\sub{\text{ord}(a)}(m)}$ \
 $\implies \text{ord}(e) = 1$
 
 **Cyclic Groups:** $G = \braket{g}$ where _generator_: $\braket{g} \dot{\iff} \set{e, g, g^2, \dots, g^{\text{ord}(g) - 1}}$ \
-$\implies \braket{g} = G \simeq \braket{\Z_{\text{ord}(G)}; \oplus} \implies$ **abelian**
+$\implies \braket{g} = G \simeq \braket{\Z\sub{\text{ord}(G)}; \oplus} \implies$ **abelian**
 
 **Ring:** $\braket{R;+;-;0;\cdot~;1}$ where $(-)$ is negation, not subtraction. Satisfies: \
 $\quad1. \braket{R;+;-;0}$ Commutative/Abelian Group \
@@ -228,4 +228,4 @@ $\implies \forall a, b: (ab = 0 \to a = 0 \lor b = 0)$
 
 **Field:** nontrivial commutative ring $F$ in which every
 nonzero element is a _unit_ ($F^\ast = F \setminus\{0\}$). \
-$\implies p$ prime $\iff \Z_p$ field.
+$\implies p$ prime $\iff \Z\sub{p}$ field.
